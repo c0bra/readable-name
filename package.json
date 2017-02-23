@@ -4,7 +4,15 @@
   "description": "Turn a string into a readable name/title/whatever",
   "main": "index.js",
   "scripts": {
-    "test": "xo && ava"
+    "test": "xo && ava",
+    "report": "nyc ava && nyc report --reporter=html"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c0bra/readable-name.git"
   },
   "keywords": [
     "readable",
@@ -16,6 +24,10 @@
   "license": "ISC",
   "devDependencies": {
     "ava": "^0.18.2",
+    "nyc": "^10.1.2",
     "xo": "^0.17.1"
+  },
+  "xo": {
+    "esnext": true
   }
 }
