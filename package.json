@@ -1,0 +1,21 @@
+{
+  "name": "readable-name",
+  "version": "1.0.0",
+  "description": "Turn a string into a readable name/title/whatever",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "keywords": [
+    "readable",
+    "string",
+    "name",
+    "title"
+  ],
+  "author": "Brian Hann",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.18.2",
+    "xo": "^0.17.1"
+  }
+}
