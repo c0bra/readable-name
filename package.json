@@ -24,6 +24,7 @@
   "license": "ISC",
   "devDependencies": {
     "ava": "^0.18.2",
+    "coveralls": "^2.11.16",
     "nyc": "^10.1.2",
     "xo": "^0.17.1"
   },
