@@ -3,10 +3,12 @@
 > Turn strings into readable names
 >
 > "personFirstName" becomes "Person First Name"
+>
+> Handles weird characters, different casings, most of what you can throw at it
 
 # Install
 
-		npm install --save readable-name
+	npm install --save readable-name
 
 # Usage
 
