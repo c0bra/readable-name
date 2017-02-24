@@ -1,15 +1,17 @@
 {
   "name": "readable-name",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Turn a string into a readable name/title/whatever",
   "main": "index.js",
   "scripts": {
     "test": "xo && ava",
+    "build": "npm run test && ./node_modules/.bin/rollem",
     "report": "nyc ava && nyc report --reporter=html"
   },
   "files": [
     "index.js"
   ],
+  "browser": "dist/readable-name.min.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/c0bra/readable-name.git"
@@ -24,8 +26,14 @@
   "license": "ISC",
   "devDependencies": {
     "ava": "^0.18.2",
+    "babel-preset-es2015-rollup": "^3.0.0",
     "coveralls": "^2.11.16",
+    "lodash": "^4.17.4",
     "nyc": "^10.1.2",
+    "rollem": "^1.10.0",
+    "rollup": "^0.41.4",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-uglify": "^1.0.1",
     "xo": "^0.17.1"
   },
   "xo": {
